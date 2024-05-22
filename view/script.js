@@ -9462,7 +9462,7 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
+document.getElementById('myBtnUP').addEventListener('click', topFunction);
 
 //▆▆▆▆▆▆▆▆▆ DARK THEME – переключение на темную тему и обратно ▆▆▆▆▆▆▆▆▆
 const themeToggleBtn = document.getElementById('darkModeToggleBtn');
