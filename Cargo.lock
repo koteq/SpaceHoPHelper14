@@ -2200,7 +2200,7 @@ dependencies = [
 
 [[package]]
 name = "spacehophelper14"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "image",
  "platform-dirs",
