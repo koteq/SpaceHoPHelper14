@@ -9,3 +9,4 @@ publish = false
 [dependencies]
 wry = "0.40.0"
 tao = "0.28.0"
+image = "0.25.1"
