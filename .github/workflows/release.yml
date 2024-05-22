@@ -5,6 +5,8 @@ on:
 
 permissions:
     contents: write
+    pages: write
+    id-token: write
 
 jobs:
     release:
@@ -35,8 +37,21 @@ jobs:
               uses: swatinem/rust-cache@v2
               with:
                 workspaces: './src -> target'
+            
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                node-version: 'latest'
+                cache: 'yarn'
+                cache-dependency-path: './view/yarn.lock'
+                
+            - name: Build frontend
+              working-directory: ./view
+              run: |
+                yarn
+                yarn vite build
 
-            - name: Build app
+            - name: Build executable
               run: cargo build --release --quiet
 
             - name: Publish artifacts
@@ -45,3 +60,13 @@ jobs:
                 artifacts: ./target/release/SpaceHoPHelper14.exe
                 body: See the assets to download and install this version.
                 tag: "v${{ steps.get-version.outputs.version }}"
+            
+            - name: Setup Pages
+              uses: actions/configure-pages@v5
+            
+            - uses: actions/upload-pages-artifact@v3
+              with:
+                path: ./view/dist
+
+            - name: Deploy to GitHub Pages
+              uses: actions/deploy-pages@v4
