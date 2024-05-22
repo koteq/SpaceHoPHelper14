@@ -1,0 +1,47 @@
+name: Release
+on:
+    push:
+        branches: [main]
+
+permissions:
+    contents: write
+
+jobs:
+    release:
+        runs-on: windows-latest
+        steps:
+            - uses: actions/checkout@v4
+              name: Checkout repository
+        
+            - name: Install Rust toolchain
+              uses: actions-rs/toolchain@v1
+              with:
+                profile: minimal
+                toolchain: stable
+                override: true
+
+            - name: Get app version
+              id: get-version
+              uses: colathro/crate-version@1.0.0
+              with:
+                file: "./Cargo.toml"
+
+            - name: Push tag
+              uses: EndBug/latest-tag@latest
+              with:
+                ref: "v${{ steps.get-version.outputs.version }}"
+
+            - name: Rust cache
+              uses: swatinem/rust-cache@v2
+              with:
+                workspaces: './src -> target'
+
+            - name: Build app
+              run: cargo build --release --quiet
+
+            - name: Publish artifacts
+              uses: ncipollo/release-action@v1
+              with:
+                artifacts: ./target/release/SpaceHoPHelper14.exe
+                body: See the assets to download and install this version.
+                tag: "v${{ steps.get-version.outputs.version }}"
