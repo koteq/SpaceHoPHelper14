@@ -1,0 +1,13 @@
+{
+  "name": "spacehophelper14-view",
+  "version": "1.0.0",
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "terser": "^5.31.0",
+    "vite": "^5.2.11",
+    "vite-plugin-minify": "^1.5.2",
+    "vite-plugin-singlefile": "^2.0.1"
+  }
+}
