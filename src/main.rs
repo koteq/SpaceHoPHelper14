@@ -1,12 +1,13 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
+use platform_dirs::AppDirs;
 use tao::{
     event::{Event, StartCause, WindowEvent},
     event_loop::{ControlFlow, EventLoop},
     window::{Icon, WindowBuilder},
 };
 use view::get_view;
-use wry::WebViewBuilder;
+use wry::{WebContext, WebViewBuilder};
 
 mod view;
 
@@ -18,7 +19,10 @@ fn main() -> wry::Result<()> {
         .with_window_icon(Some(get_icon()))
         .build(&event_loop)
         .unwrap();
+    
+    let mut context = WebContext::new(Some(AppDirs::new(Some("SpaceHoPHelper14"), false).unwrap().data_dir));
     let _webview = WebViewBuilder::new(&window)
+        .with_web_context(&mut context)
         .with_html(get_view())
         .build()?;
 
