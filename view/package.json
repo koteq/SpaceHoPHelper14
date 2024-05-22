@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.html",
   "license": "MIT",
+  "scripts": {
+    "build": "yarn && yarn vite build"
+  },
   "dependencies": {},
   "devDependencies": {
     "terser": "^5.31.0",
