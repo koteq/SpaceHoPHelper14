@@ -1,0 +1,40 @@
+{
+  "build": {
+    "beforeBuildCommand": "yarn build",
+    "beforeDevCommand": "yarn dev",
+    "devPath": "http://localhost:1984/",
+    "distDir": "./view/dist"
+  },
+  "tauri": {
+    "allowlist": {
+      "shell": {
+        "open": true
+      },
+      "clipboard": {
+        "writeText": true
+      }
+    },
+    "bundle": {
+      "active": false,
+      "icon": [
+        "assets/icons/icon.png",
+        "assets/icons/icon.ico"
+      ],
+      "identifier": "SpaceHoPHelper14",
+      "resources": []
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": false
+    },
+    "windows": [
+      {
+        "maximized": true,
+        "resizable": true,
+        "title": "SpaceHoPHelper14"
+      }
+    ]
+  }
+}

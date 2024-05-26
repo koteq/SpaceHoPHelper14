@@ -13996,7 +13996,7 @@
                 <input type="text" class="form-control" id="station-number" placeholder="Station XX-000"
                     value="Station XX-000"
                     title="Укажите наименование станции и её код. Нажмите Enter, чтобы привести к нужному формату"
-                    name="station-number" required onkeydown="handleKeyDown(event)">
+                    name="station-number" required>
             </div>
             <div class="col-sm-4 mb-3">
                 <label for="your-name" class="form-label fw-bold">Ваше
@@ -14055,12 +14055,11 @@
 
                     <input type="text" id="time-input" class="form-control" placeholder="00:00:00" maxlength="8"
                         pattern="[0-9]{2}:[0-9]{2}:[0-9]{2}"
-                        title="Укажите текущее время на станции в формате '00:00:00' и нажмите Enter (или кнопку Старт)"
-                        oninput="formatTime(this)">
+                        title="Укажите текущее время на станции в формате '00:00:00' и нажмите Enter (или кнопку Старт)">
 
 
                     <button type="button" id="start-timer" class="btn btn-primary ms-2">Старт</button>
-                    <input type="text" id="timer-output" class="form-control ms-2" placeholder="00:00" disabled>
+                    <input type="text" id="timer-output" class="form-control ms-2" placeholder="00:00:00" disabled>
                 </div>
             </div>
         </div>
