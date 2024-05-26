@@ -8,6 +8,7 @@
     "dev": "yarn && yarn vite --port 1984"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "cleave.js": "^1.6.0"
   },
   "devDependencies": {
