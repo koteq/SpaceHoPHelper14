@@ -9466,14 +9466,22 @@ document.getElementById('myBtnUP').addEventListener('click', topFunction);
 
 //▆▆▆▆▆▆▆▆▆ DARK THEME – переключение на темную тему и обратно ▆▆▆▆▆▆▆▆▆
 const themeToggleBtn = document.getElementById('darkModeToggleBtn');
-themeToggleBtn.addEventListener('click', function () {
-    // Переключаем между светлой и темной темой
+const isDarkTheme = () => document.documentElement.classList.contains('dark-mode');
+function toggleTheme() {
     document.documentElement.classList.toggle('dark-mode');
-    // Меняем содержимое кнопки
-    const isDarkMode = document.documentElement.classList.contains('dark-mode');
-    const darkModeText = isDarkMode ? 'Space HoP Helper 14 🌚' : 'Space HoP Helper 14 🌞';
-    themeToggleBtn.textContent = darkModeText;
-});
+    themeToggleBtn.textContent = 'Space HoP Helper 14 ' + (isDarkTheme() ?  '🌚' : '🌞');
+}
+function setTheme(theme) {
+    toggleTheme();
+    localStorage.setItem('theme', isDarkTheme() ? 'dark' : 'light');
+}
+themeToggleBtn.addEventListener('click', setTheme);
+const savedTheme = localStorage.getItem('theme');
+if (!savedTheme) {
+    localStorage.setItem('theme', 'light');
+} else if (savedTheme === 'dark') {
+    toggleTheme();
+}
 
 //▆▆▆▆▆▆▆▆▆ Отображения toast-сообщения, которое найдено по ID ▆▆▆▆▆▆▆▆▆
 function showToast(toastId) {
