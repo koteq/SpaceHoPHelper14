@@ -9,6 +9,9 @@
     "allowlist": {
       "shell": {
         "open": true
+      },
+      "clipboard": {
+        "writeText": true
       }
     },
     "bundle": {
