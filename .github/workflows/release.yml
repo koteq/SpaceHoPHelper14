@@ -37,6 +37,9 @@ jobs:
               uses: swatinem/rust-cache@v2
               with:
                 workspaces: './src -> target'
+              
+            - name: Install tauri-cli
+              run: cargo install tauri-cli
             
             - name: Setup Node.js
               uses: actions/setup-node@v4
@@ -44,15 +47,9 @@ jobs:
                 node-version: 'latest'
                 cache: 'yarn'
                 cache-dependency-path: './view/yarn.lock'
-                
-            - name: Build frontend
-              working-directory: ./view
-              run: |
-                yarn
-                yarn vite build
 
             - name: Build executable
-              run: cargo build --release --quiet
+              run: cargo tauri build
 
             - name: Publish artifacts
               uses: ncipollo/release-action@v1
