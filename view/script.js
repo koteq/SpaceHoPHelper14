@@ -259,8 +259,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             ВрИО Капитана
                         </h4>
                         <div class="d-flex">
-                            <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                            <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                            <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                            <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                         </div>
                     </div>
                     <div class="card-body">
@@ -302,8 +302,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Заявление на ВрИО главы отдела
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -339,8 +339,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Приказ капитана о принудительном назначении главы отдела
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -392,8 +392,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Лаконичное заявление
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -427,8 +427,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Полное заявление с анкетой
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -467,8 +467,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         РП Анкета ✍️
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -562,8 +562,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Лаконичное заявление о смене должности
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -600,8 +600,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Полное заявление о смене должности
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -649,8 +649,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Свидетельство о повышении квалификации
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -696,8 +696,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Заявление об увольнении
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -741,8 +741,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Приказ об увольнении
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -801,8 +801,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Запрос доступа для себя
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -842,8 +842,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Доступ для нескольких сотрудников (от Капитана или Главы отдела)
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -888,8 +888,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Расширенный доступ 🔓
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -924,8 +924,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Запрос аварийных карт для СБ 🎟️
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -1042,8 +1042,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Приказ о лишении доступа
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -1120,8 +1120,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Акт передачи оборудования ГСБ
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -1181,8 +1181,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Цель смены (приказ для ключевого отдела)
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -1258,8 +1258,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Цель смены (второстепенный отдел)
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -1331,8 +1331,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Отчёт о работе отдела
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -1416,8 +1416,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Отчет о СВОЕЙ проделанной работе
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -1455,8 +1455,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Отчет Главы отдела о работе сотрудника
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -1502,8 +1502,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Отчёт о ситуации на станции
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -1666,8 +1666,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Ядерные опера 👺
                             </h5>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -1702,8 +1702,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Зомби 🧟‍♀️
                             </h5>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -1741,8 +1741,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Революция 🤬
                             </h5>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -1778,8 +1778,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Опасные существа 👾
                             </h5>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -1815,8 +1815,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Составление заявления
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -1930,8 +1930,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Награждение сотрудника
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -1970,8 +1970,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Награждение отдела
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -2058,8 +2058,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Стандартная грамота
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -2095,8 +2095,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Улучшенная грамота (но требуется дальнейшее форматирование)
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -2190,8 +2190,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Заказ на закупку ресурсов, снаряжения
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -2230,8 +2230,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Заказ на закупку вооружения
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -2278,8 +2278,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Топливо для генераторов 🔋
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -2318,8 +2318,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Ресурсы для инженеров 🏗️
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -2361,8 +2361,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Строительство Сингулярного двигателя 🧿
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -2409,8 +2409,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Строительство солнечных панелей 🪟
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -2453,8 +2453,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Строительство шаттла 🚀
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -2499,8 +2499,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Строительство двигателя Тесла ⚡
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -2548,8 +2548,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Эмиттеры 💠🔫
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -2586,8 +2586,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Канистры с газами ⛽
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -2631,8 +2631,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Ресурсы для НИО 🔬
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -2676,8 +2676,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Заказ артефактов 🦪
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -2721,8 +2721,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Пополнение ХимкоМат 🧪
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -2759,8 +2759,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Ресурсы для Медотдела 💉
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -2804,8 +2804,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                Семена в ботанику 🍄🫘
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -2843,8 +2843,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                Появление Кудзу 🎍
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -2883,8 +2883,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Пополнение вендинговых автоматов 🛍️
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -2931,8 +2931,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Разное 🛒
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -2984,8 +2984,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Ресурсы для СБ 🪖
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -3024,8 +3024,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Вооружение и броня 🚨
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -3069,8 +3069,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 Массовые беспорядки 📣
                             </h4>
                             <div class="d-flex">
-                                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -3123,8 +3123,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Медицинский отдел ⚕️
                 </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -3164,8 +3164,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Научный Отдел 🤖
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -3208,8 +3208,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Сервисный отдел 🍹
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -3249,8 +3249,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Инженерный отдел 🦺
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -3293,8 +3293,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Служба Безопасности 🛡️
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -3334,8 +3334,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Отдел Снабжения ⛏️
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -3383,8 +3383,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 ГВ. Производство лекарств (таблетки) 💊
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -3432,8 +3432,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 ГВ. Производство лекарств (жидкости) ⚗️
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -3485,8 +3485,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         ГВ. Производство лекарств для криокапсулы 🧬
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -3530,8 +3530,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Производство лекарств (война) ⚔️💊
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -3575,8 +3575,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Лекарства для экспедиции ⛏️👽
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -3624,8 +3624,8 @@ document.addEventListener('DOMContentLoaded', function () {
                Ботаник. Удобрения 🪴
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -3665,8 +3665,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Ботаник. Мутация растений 🍂
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -3714,8 +3714,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Заказ лекарственных растений (ботаник) 🍃
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -3756,8 +3756,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Омнизин (ботаник) 🤍
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -3797,8 +3797,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Доски (ботаник) 🪵
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -3836,8 +3836,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Ингредиенты для кухни (ботаник) 🌾
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -3889,8 +3889,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Эмиттеры 💠🔫
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -3928,8 +3928,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Компоненты шаттла 🚀
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -3973,8 +3973,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Компоненты системы солнечных панелей 🪟
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -4013,8 +4013,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Разные технологии и инструменты ⚙️🧰💻
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -4081,8 +4081,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Создание киборгов 🤖🛠️🕹️
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -4128,8 +4128,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Химические гранаты 💣🧨
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -4181,8 +4181,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Повышение-понижение ЗП для сотрудника
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -4219,8 +4219,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Повышение-понижение ЗП для отдела
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -4330,8 +4330,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Запрос к Центральному Командованию
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -4372,8 +4372,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Обращение к Центральному Командованию
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -4443,8 +4443,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Отчет о собрании глав
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -4527,8 +4527,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Стандартный бланк с оформлением
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -4560,8 +4560,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Бланк без оформления
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -4586,8 +4586,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Письмо (альтернативная форма)
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -4621,8 +4621,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Отчет об устранении нарушений (один сотрудник)
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -4660,8 +4660,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Отчет об устранении нарушений (несколько сотрудников)
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -4716,8 +4716,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Разрешение на передвижение при угрозе (один сотрудник)
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -4755,8 +4755,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Разрешение на передвижение при угрозе: для сотрудников отдела
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -4823,8 +4823,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Запрос установления уровня угроз
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -4875,8 +4875,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Запрос эвакуационного шаттла
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -4944,8 +4944,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Обращение
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -5006,8 +5006,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Снаряжение отдела
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -5049,8 +5049,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Личное снаряжение
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -5094,8 +5094,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Разрешение на использование снаряжения
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -5134,8 +5134,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Разрешение на использование и получение снаряжения (всему отделу)
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -5184,8 +5184,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Запрос НИО на инструменты разных отделов 🌌
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -5230,8 +5230,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Запрос снаряжения для утилизаторов ♻️
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -5284,8 +5284,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Жалоба на нарушение трудового порядка
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -5331,8 +5331,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Запрос регистрации шаттла
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -5402,8 +5402,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Заказ специального снаряжения
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -5451,8 +5451,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Официальная передача объекта от отдела
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -5491,8 +5491,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Личная передача объекта от сотрудника
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -5538,8 +5538,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Отчет о внутреннем расследовании (от АВД)
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -5582,8 +5582,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Решение о начале судебного процесса
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -5631,8 +5631,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Судебное решение
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -5696,8 +5696,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Запрос копий документов
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -5735,8 +5735,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Запрос оригиналов документов
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -5782,8 +5782,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Кассационная жалоба
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -5848,8 +5848,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Жалоба на правонарушение
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -5892,8 +5892,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Приговор
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -5944,8 +5944,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Свидетельство о правонарушении (свидетель)
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -5990,8 +5990,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Свидетельство о правонарушении (явка с повинной)
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6043,8 +6043,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Обвинительное заключение
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6095,8 +6095,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Разрешение на обыск сотрудника
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6130,8 +6130,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Разрешение на обыск отдела
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6173,8 +6173,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Приказ об УДО заключенного
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6218,8 +6218,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Разрешение на ношение оружия
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6274,8 +6274,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Отчет детектива
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6324,8 +6324,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Детальный отчет о проведенном расследовании для СБ
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6390,8 +6390,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Заключение по делу (частный детектив)
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6438,8 +6438,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Криминалистическое заключение (частный следователь)
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6498,8 +6498,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Разрешение на рецептурный препарат
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6542,8 +6542,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Общее заключение о состоянии здоровья
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6593,8 +6593,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Заключение о психологическом здоровье
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6701,8 +6701,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Распоряжение о медицинском вмешательстве
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6742,8 +6742,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Запрос на проведение эвтаназии
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6787,8 +6787,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Свидетельство о смерти
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6832,8 +6832,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Разрешение на утилизацию тела (сотрудник станции)
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6866,8 +6866,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Разрешение на утилизацию тела (незарегистрированное лицо)
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6911,8 +6911,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Разрешение на строительство
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -6953,8 +6953,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Отчет о техническом состоянии
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -7005,8 +7005,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Запрос на проведение строительных работ
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -7058,8 +7058,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Отчет об эксперименте
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -7119,8 +7119,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Приказ о признании разумности существа
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -7173,8 +7173,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Запрос на проведение модернизации отдела
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -7213,8 +7213,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Запрос на проведение модернизации системы-объекта
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -7260,8 +7260,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Отчет об утилизации
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -7314,8 +7314,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Заявка на поставку товара
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -7389,8 +7389,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Отчет об экспедиции
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -7441,8 +7441,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Свидетельство о заключении брака
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -7482,8 +7482,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Разрешение на расширение брака
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -7523,8 +7523,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Свидетельство о расторжении брака
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -7571,8 +7571,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Меню столовой
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -7645,8 +7645,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Меню бара
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -7708,8 +7708,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Заявление на КПК и ID-карту
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -7746,8 +7746,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Новый член экипажа станции
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -7785,8 +7785,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Только КПК
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -7823,8 +7823,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Только ID-карта
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -7872,8 +7872,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Запрос повышения
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -7926,8 +7926,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Запрос внеперечневого трудоустройства
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -8018,8 +8018,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Анонимный донос
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -8048,8 +8048,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         Заявление о нарушении СРП членом экипажа
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -8094,8 +8094,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Приказ Штаба ЦК
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -8133,8 +8133,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Ответ Штаба ЦК
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -8174,8 +8174,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Запрос о прогрессе цели
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -8214,8 +8214,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Запрос о статусе станции
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -8259,8 +8259,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Приказ о ведении отчётов
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -8299,8 +8299,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Приказ об уменьшении выплаты за смену
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -8354,8 +8354,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Приказ об увольнении члена Командного Состава Станции
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -8397,8 +8397,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Уведомление АВД об игнорировании Главами Приветствия ЦК
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -8451,8 +8451,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Запрос отчёта по приказу (унифицировано)
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -8494,8 +8494,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 Стандартный бланк
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -8601,8 +8601,8 @@ NT-MED-12 Приказ и отчёт о создании и ведении ме�
                 Отчет о выполнении целей
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -8639,8 +8639,8 @@ NT-MED-12 Приказ и отчёт о создании и ведении ме�
                 УвЕдОмЛеНиЕ о ЛиКвИдАцИи
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -8679,8 +8679,8 @@ NT-MED-12 Приказ и отчёт о создании и ведении ме�
                 ДеЛоВаЯ сДеЛкА
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -8717,8 +8717,8 @@ NT-MED-12 Приказ и отчёт о создании и ведении ме�
                 НоТа О нАчАлЕ вОеНнЫх ДеЙсТвИй
             </h4>
             <div class="d-flex">
-                <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
             </div>
         </div>
         <div class="card-body">
@@ -8754,8 +8754,8 @@ NT-MED-12 Приказ и отчёт о создании и ведении ме�
                         Оͬ͌̔̄̀Ш̫̼̈ͭͧͅИ̣̩̰̳Б̥̜̥̇͊̿͆̍̚̕К̫̽̍̋ͫ́͛͑А̛̼̚ загрузки заголовка формы
                     </h4>
                     <div class="d-flex">
-                        <button class="btn mt-2 me-2" onclick="saveCardContent(this)" title="Сохранить в файл">💾</button>
-                        <button class="btn mt-2 copy-content-btn" onclick="copyCardContent(this)" title="Копировать">📑</button>
+                        <button class="btn mt-2 me-2 save-content-btn" title="Сохранить в файл">💾</button>
+                        <button class="btn mt-2 copy-content-btn" title="Копировать">📑</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -8781,9 +8781,12 @@ NT-MED-12 Приказ и отчёт о создании и ведении ме�
         `;
         }
 
-
-
         statementContainer.innerHTML = statementTemplate;
+
+        const copyBtns = document.querySelectorAll('.copy-content-btn');
+        copyBtns.forEach(button => button.addEventListener('click', copyCardContent));
+        const saveBtns = document.querySelectorAll('.save-content-btn');
+        saveBtns.forEach(button => button.addEventListener('click', saveCardContent));
     });
     //▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆
 
@@ -9489,8 +9492,8 @@ function showToast(toastId) {
 }
 
 //▆▆▆▆▆▆▆▆▆ Функция для копирования содержимого карточки в буфер обмена ▆▆▆▆▆▆▆▆▆
-function copyCardContent(button) {
-    const cardBody = button.closest('.card').querySelector('.editable-content');
+function copyCardContent(e) {
+    const cardBody = e.currentTarget.closest('.card').querySelector('.editable-content');
 
     navigator.clipboard.writeText(cardBody.innerText.trim())
         .then(() => {
@@ -9524,9 +9527,9 @@ function saveContentToFile(content, name) {
     // toast
     showToast('toastSave');
 }
-function saveCardContent(button) {
-    const cardBody = button.closest('.card').querySelector('.editable-content');
-    const cardTitle = button.closest('.card').querySelector('.card-title').innerText.trim();
+function saveCardContent(e) {
+    const cardBody = e.currentTarget.closest('.card').querySelector('.editable-content');
+    const cardTitle = e.currentTarget.closest('.card').querySelector('.card-title').innerText.trim();
     console.log(cardTitle);
     saveContentToFile(cardBody.innerText.trim(), cardTitle);
 }
