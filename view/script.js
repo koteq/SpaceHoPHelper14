@@ -1,3 +1,5 @@
+import Cleave from 'cleave.js';
+
 //▆▆▆▆▆▆ Создание объекта с настройками для каждого типа заявления ▆▆▆▆▆▆▆▆▆▆
 const statementTypeSettings = {
     'vrio_captain_1': { fullNameLabel: true, fullName: true, positionSelectLabel: true, positionSelect: true },
@@ -122,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const minutes = Math.floor((seconds % 3600) / 60);
         const sec = seconds % 60;
 
-        return `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}`;
+        return `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${sec.toString().padStart(2, "0")}`;
     }
     function convertInputToSeconds(inputValue) {
         //проверка на неверный формат
@@ -171,6 +173,10 @@ document.addEventListener('DOMContentLoaded', function () {
             startTimer()
         }
     });
+    const timeInputCleave = new Cleave('#time-input', {
+        time: true,
+        timePattern: ['h', 'm', 's']
+    })
     //▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆
 
 
@@ -9535,11 +9541,12 @@ function saveCardContent(e) {
 }
 
 //▆▆▆▆▆▆▆▆▆ Форматирование поля "Станция" при нажатии Enter  ▆▆▆▆▆▆▆▆▆
+document.getElementById('station-number').addEventListener('keydown', handleKeyDown);
 function handleKeyDown(event) {
 
     if (event.key === 'Enter') {
 
-        var inputText = document.getElementById('station-number').value;
+        var inputText = event.currentTarget.value;
 
         // Первая часть паттерна, тут можно добавить вашу карту
         var part1Pattern = new RegExp("(Atlas|TestTeg|Fland|Maus|Delta|Avrite|Paper|Silly|Meta|Packed|Gate|Gelta|Cluster|Omega|Astra|Bagel|Origin|CentComm|Outpost|Ishimura|NukieOutpost|Box|Europa|Spectrum|Saltern|Core|Marathon|MeteorArena|Atlas|Reach|Train|Oasis|Pillar|Aspid|Barratry|Gemini|Lighthouse|Moose|Split)", "i");
@@ -9553,7 +9560,7 @@ function handleKeyDown(event) {
 
         // Склеиваем части паттерна и меняем значение в поле
         var result = part1.charAt(0).toUpperCase() + part1.slice(1).toLowerCase() + part2.toUpperCase();
-        document.getElementById('station-number').value = result;
+        event.currentTarget.value = result;
     }
 }
 
