@@ -6,6 +6,11 @@
     "distDir": "./view/dist"
   },
   "tauri": {
+    "allowlist": {
+      "shell": {
+        "open": true
+      }
+    },
     "bundle": {
       "active": false,
       "icon": [
