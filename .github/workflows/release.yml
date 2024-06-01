@@ -51,6 +51,9 @@ jobs:
             - name: Build executable
               run: cargo tauri build
 
+            - name: Artifact preparation
+              run: ./scripts/create_latest.ps1
+
             - name: Publish artifacts
               uses: ncipollo/release-action@v1
               with:
@@ -63,7 +66,7 @@ jobs:
             
             - uses: actions/upload-pages-artifact@v3
               with:
-                path: ./view/dist
+                path: ./target/publish
 
             - name: Deploy to GitHub Pages
               uses: actions/deploy-pages@v4
