@@ -3,7 +3,7 @@
     "beforeBuildCommand": "yarn build",
     "beforeDevCommand": "yarn dev",
     "devPath": "http://localhost:1984/",
-    "distDir": "./view/dist"
+    "distDir": "./target/view"
   },
   "tauri": {
     "allowlist": {

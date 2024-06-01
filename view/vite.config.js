@@ -7,6 +7,7 @@ export default defineConfig({
     }), ViteMinifyPlugin()],
     build: {
         minify: "terser",
-        target: 'esnext'
+        target: 'esnext',
+        outDir: "../target/view"
     }
 })
