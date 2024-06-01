@@ -8,6 +8,7 @@
     "dev": "yarn && yarn vite --port 1984"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
     "@tauri-apps/api": "^1.5.6",
     "bootstrap": "^5.3.3",
     "cleave.js": "^1.6.0"

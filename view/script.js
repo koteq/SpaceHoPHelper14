@@ -9491,10 +9491,10 @@ if (!savedTheme) {
 } else if (savedTheme === 'dark') {
     toggleTheme();
 }
-
+import { Toast } from 'bootstrap';
 //▆▆▆▆▆▆▆▆▆ Отображения toast-сообщения, которое найдено по ID ▆▆▆▆▆▆▆▆▆
 function showToast(toastId) {
-    var toast = new bootstrap.Toast(document.getElementById(toastId)).show();
+    var toast = new Toast(document.getElementById(toastId)).show();
 }
 
 //▆▆▆▆▆▆▆▆▆ Функция для копирования содержимого карточки в буфер обмена ▆▆▆▆▆▆▆▆▆

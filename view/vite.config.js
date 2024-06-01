@@ -8,6 +8,7 @@ export default defineConfig({
     build: {
         minify: "terser",
         target: 'esnext',
-        outDir: "../target/view"
+        outDir: "../target/view",
+        emptyOutDir: true
     }
 })
