@@ -1,6 +1,7 @@
 import { invoke } from '@tauri-apps/api';
 import { relaunch } from "@tauri-apps/api/process";
 import { checkUpdate, installUpdate, onUpdaterEvent } from "@tauri-apps/api/updater";
+import { Modal } from 'bootstrap';
 
 invoke('get_repository').then(res => {
     document.querySelectorAll('.repo-link').forEach(link => {
@@ -18,7 +19,7 @@ try {
     if (update.shouldUpdate) {
         const modal = document.querySelector('#updateModal .modal-body > p');
         modal.textContent = modal.textContent.replace('{newVersion}', update.manifest.version);
-        new bootstrap.Modal(document.getElementById('updateModal')).show();
+        new Modal(document.getElementById('updateModal')).show();
     }
 } catch (err) {
     console.error(err)
