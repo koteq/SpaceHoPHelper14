@@ -1,6 +1,12 @@
+Write-Host "Checking dependencies"
 if (-not (Get-Module -ListAvailable -Name PSToml)) {
+    Write-Host "Installing the 'PSToml' module"
     Install-Module -Name PSToml -Scope CurrentUser -Force
 }
+
+Write-Host "Parsing the " -NoNewLine 
+Write-Host "Cargo.toml" -ForegroundColor Green -NoNewline
+Write-Host " file"
 $manifest = Get-Content -Path 'Cargo.toml' | ConvertFrom-Toml
 
 $outPath = "target/publish"
@@ -12,8 +18,26 @@ $targetPath = "target"
 $bundleDir = "target/release/bundle/$targetType/"
 $bundlePath = "$bundleDir$baseName.$targetType.zip"
 $sign = Get-Content "$bundlePath.sig"
-
 $userName = $manifest.package.repository.Split("/")[3].ToLower()
+
+$color = "Green"
+
+Write-Host
+Write-Host "Installer type: " -NoNewline
+Write-Host "$targetType" -ForegroundColor $color
+
+Write-Host "App name: " -NoNewline
+Write-Host "$appName" -ForegroundColor $color
+
+Write-Host "App version: " -NoNewline
+Write-Host "v$($manifest.package.version)" -ForegroundColor $color
+
+Write-Host "Bundle name: " -NoNewline
+Write-Host "$baseName.$targetType.zip" -ForegroundColor $color
+
+Write-Host "Publish folder: " -NoNewline
+Write-Host "$outPath" -ForegroundColor $color
+Write-Host
 
 $latest = [PSCustomObject]@{
     version = "v$($manifest.package.version)"
@@ -26,11 +50,30 @@ $latest = [PSCustomObject]@{
     }
 }
 
+Write-Host "Initialization of " -NoNewline
+Write-Host "'$outPath/bundles/'" -NoNewline -ForegroundColor $color
+Write-Host " folders"
 New-Item -Path "$outPath/bundles" -ItemType Directory -Force | Out-Null
 
-$latest | ConvertTo-Json -Compress | Out-File -FilePath "$outPath/latest.json"
+Get-ChildItem -Path "$targetPath/web" | ForEach-Object {
+    Write-Host "Copying " -NoNewline
+    Write-Host "'$targetPath/web/$($_.Name)'" -NoNewline -ForegroundColor $color
+    Write-Host " file to " -NoNewline
+    Write-Host "'$outPath/$($_.Name)'" -NoNewline -ForegroundColor $color
+    Write-Host
 
-Copy-Item -Path "$targetPath/view/*" -Destination "$outPath" -Force
+    Copy-Item -Path "$targetPath/web/$($_.Name)" -Destination "$outPath" -Force
+}
+
+Write-Host "Copying " -NoNewline 
+Write-Host "'$bundlePath'" -NoNewline -ForegroundColor $color
+Write-Host " bundle to " -NoNewline
+Write-Host "'$outPath/bundles/$baseName.$targetType.zip'" -ForegroundColor $color
+
 Copy-Item -Path "$bundlePath" -Destination "$outPath/bundles" -Force
+
+Write-Host "Writing " -NoNewline
+Write-Host "'$outPath/latest.json'" -ForegroundColor $color
+$latest | ConvertTo-Json -Compress | Out-File -FilePath "$outPath/latest.json"
 
 $latest | ConvertTo-Json | Write-Host
