@@ -6,6 +6,7 @@ export default defineConfig({
         inlinePattern: ["*.js", "*.css"],
     }), ViteMinifyPlugin()],
     build: {
-        minify: "terser"
+        minify: "terser",
+        target: 'esnext'
     }
 })
