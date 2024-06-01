@@ -63,7 +63,7 @@ jobs:
             - name: Publish artifacts
               uses: ncipollo/release-action@v1
               with:
-                artifacts: ./target/release/SpaceHoPHelper14.exe
+                artifacts: "./target/release/bundle/nsis/*.exe,./target/release/*.exe"
                 body: See the assets to download and install this version.
                 tag: "v${{ steps.get-version.outputs.version }}"
             
