@@ -876,6 +876,26 @@
         </div>
     </div>
 
+<!-- Модальное окно добавления имен в список datalistOptionsFullName -->
+<div class="modal fade" id="updateModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 px-2" id="exampleModalLabel">Доступна новая версия</h1>
+            </div>
+            <div class="modal-body">
+                <p class="second-font">В репозитории была найдена новая версия программы {newVersion}. Полные изменения от версии можете посмотреть в <a class="repo-link" target="_blank">репозитории</a>.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Позже</button>
+                <button id="update-button" type="button" class="btn btn-primary">Обновить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="updates.js"></script>
+
 </body>
 
 </html>
