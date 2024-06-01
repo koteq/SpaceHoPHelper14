@@ -38,7 +38,10 @@
     "updater": {
       "active": true,
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEY3QTdDNkZGOTI0QzcyOUYKUldTZmNreVMvOGFuOTVybnpBNTBRdERZVThlK3VaODkvUm1GbmppL3FuVmI3RUJsV2gxVFBudUoK",
-      "dialog": false
+      "dialog": false,
+      "endpoints": [
+        "https://ertanic.github.io/SpaceHoPHelper14/latest.json"
+      ]
     },
     "windows": [
       {
