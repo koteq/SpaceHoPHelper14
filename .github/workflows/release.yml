@@ -63,7 +63,7 @@ jobs:
               run: yarn build
 
             - name: Artifact preparation
-              run: ./scripts/create_latest.ps1
+              run: ./scripts/prepare_artifacts.ps1
 
             - name: Publish artifacts
               uses: ncipollo/release-action@v1
