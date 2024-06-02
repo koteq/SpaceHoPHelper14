@@ -22,6 +22,8 @@ $userName = $manifest.package.repository.Split("/")[3].ToLower()
 
 $color = "Green"
 
+# Info
+
 Write-Host
 Write-Host "Installer type: " -NoNewline
 Write-Host "$targetType" -ForegroundColor $color
@@ -50,6 +52,8 @@ $latest = [PSCustomObject]@{
     }
 }
 
+# Web folder
+
 Write-Host "Initialization of " -NoNewline
 Write-Host "'$outPath/bundles/'" -NoNewline -ForegroundColor $color
 Write-Host " folders"
@@ -64,6 +68,31 @@ Get-ChildItem -Path "$targetPath/web" | ForEach-Object {
 
     Copy-Item -Path "$targetPath/web/$($_.Name)" -Destination "$outPath" -Force
 }
+
+# Profiles
+
+Write-Host "Initialization of " -NoNewline
+Write-Host "'$outPath/profiles/'" -NoNewline -ForegroundColor $color
+Write-Host " folders"
+New-Item -Path "$outPath/profiles" -ItemType Directory -Force | Out-Null
+
+Write-Host "Reading a list of profiles:"
+
+$profiles = @()
+Get-ChildItem -Path "assets/profiles" | ForEach-Object {
+    Write-Host "`t + $($_.Name)" -ForegroundColor $color
+    $profileObj = Get-Content -Path "assets/profiles/$($_.Name)" | ConvertFrom-Json
+    $profiles += [PSCustomObject]@{
+        "$($profileObj.profile)" = "$($_.Name)"
+    }
+    Copy-Item -Path "assets/profiles/$($_.Name)" -Destination "$outPath/profiles" -Force
+}
+Write-Host "Writing " -NoNewline
+Write-Host "'$outPath/profiles/meta.json'" -ForegroundColor $color
+$profiles | ConvertTo-Json -Compress | Out-File -FilePath "$outPath/profiles/meta.json"
+$profiles | ConvertTo-Json | Write-Host
+
+# Bundles
 
 Write-Host "Copying " -NoNewline 
 Write-Host "'$bundlePath'" -NoNewline -ForegroundColor $color
