@@ -1,4 +1,4 @@
-name: Release
+name: Pre-release
 on:
     push:
         branches: [pre]
@@ -9,7 +9,7 @@ permissions:
     id-token: write
 
 jobs:
-    release:
+    pre-release:
         runs-on: windows-latest
         steps:
             - uses: actions/checkout@v4
@@ -57,8 +57,14 @@ jobs:
                 TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
               run: cargo tauri build
 
+            - name: Build web version
+              env:
+                VITE_WEB: "$true"
+              working-directory: ./view
+              run: yarn build
+
             - name: Artifact preparation
-              run: ./scripts/create_latest.ps1
+              run: ./scripts/prepare_artifacts.ps1
 
             - name: Publish artifacts
               uses: ncipollo/release-action@v1
@@ -67,3 +73,13 @@ jobs:
                 body: See the assets to download and install this version.
                 tag: "v${{ steps.get-version.outputs.version }}"
                 prerelease: true
+            
+            - name: Setup Pages
+              uses: actions/configure-pages@v5
+            
+            - uses: actions/upload-pages-artifact@v3
+              with:
+                path: ./target/publish
+
+            - name: Deploy to GitHub Pages
+              uses: actions/deploy-pages@v4

@@ -60,6 +60,7 @@ jobs:
             - name: Build web version
               env:
                 VITE_WEB: "$true"
+              working-directory: ./view
               run: yarn build
 
             - name: Artifact preparation
