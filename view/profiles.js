@@ -17,6 +17,10 @@ if (!import.meta.env.VITE_WEB) {
 const sectionsById = new Map(profile.groups.flatMap(group => group.sections.map(section => [section.id, section])));
 
 // Selectors
+const positionSelects = [
+        document.querySelector('#position-field > select')
+    ,   document.querySelector('#position-new-field > select')
+    ,   document.querySelector('#position-object-field > select')];
 const statementTypeSelect = document.querySelector('#statement-type');
 const output = document.querySelector('#generated-statement');
 
@@ -29,7 +33,7 @@ const Section = (group, section) => {
     const element = document.createElement('option');
     element.setAttribute('value', section.id);
     element.textContent = section.name;
-    group.appendChild(element);
+    if (group !== null) group.appendChild(element);
     return element
 }
 
@@ -40,6 +44,24 @@ profile.groups.forEach(group => {
         const sectionElement = Section(groupElement, section);
     })
     statementTypeSelect.appendChild(groupElement);
+})
+
+// Init list of positions
+positionSelects.forEach(select => {
+    const undefinedOption = Section(null, { id: 1, name: profile.positions.undefined });
+    select.appendChild(undefinedOption);
+
+    let nextId = 2;
+    Object.entries(profile.positions).forEach(([department, positions]) => {
+        if (department === 'undefined') return;
+        const departmentGroup = Group(department);
+        positions.forEach(position => {
+            const positionOption = Section(departmentGroup, { id: nextId, name: position });
+            nextId += 1;
+            departmentGroup.appendChild(positionOption);
+        });
+        select.appendChild(departmentGroup);
+    });
 })
 
 // TODO: Rewrite it in human language...
