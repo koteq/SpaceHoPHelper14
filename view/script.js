@@ -1,5 +1,5 @@
-import { Toast } from 'bootstrap';
 import Cleave from 'cleave.js';
+import { showToast } from './utils';
 
 const timeInput = document.getElementById("time-input");
 const timerOutput = document.getElementById("timer-output");
@@ -88,44 +88,6 @@ if (!savedTheme) {
     localStorage.setItem('theme', 'light');
 } else if (savedTheme === 'dark') {
     toggleDarkMode();
-}
-
-/// Toast
-function showToast(toastId) {
-  var toast = new Toast(document.getElementById(toastId)).show();
-}
-
-/// Copy content to clipboard
-/// TODO: add handler for buttons
-function copyCardContent(event) {
-  const card = event.currentTarget.closest('.card');
-  const content = card.querySelector('.editable-content').textContent.trim();
-
-  navigator.clipboard.writeText(content)
-    .then(() => showToast('toastCopy'))
-    .catch(error => console.error('Error copying:', error));
-}
-
-/// Save content to file
-function saveContentToFile(content, fileName) {
-  const blob = new Blob([content], { type: 'text/plain' });
-  const url = URL.createObjectURL(blob);
-  const link = document.createElement('a');
-  link.href = url;
-  link.download = fileName;
-  link.style.display = 'none';
-  document.body.appendChild(link);
-  link.click();
-  URL.revokeObjectURL(url);
-  link.remove();
-  showToast('toastSave');
-}
-
-/// TODO: add handler for buttons
-function saveCardContent(event) {
-  const cardContent = event.currentTarget.closest('.card').querySelector('.editable-content');
-  const cardTitle = event.currentTarget.closest('.card').querySelector('.card-title').innerText.trim();
-  saveContentToFile(cardContent.innerText.trim(), `${cardTitle}.txt`);
 }
 
 // Format station field on Enter key press

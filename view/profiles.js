@@ -76,11 +76,13 @@ const CardHeader = (title) => {
     downloadButton.classList.add('btn', 'mt-2', 'me-2', 'download-content-button');
     downloadButton.title = "Сохранить в файл";
     downloadButton.textContent = '💾';
+    downloadButton.addEventListener('click', saveCardContent);
 
     const copyButton = document.createElement('button');
     copyButton.classList.add('btn', 'mt-2', 'copy-content-btn');
     copyButton.title = "Скопировать в буфер обмена";
     copyButton.textContent = '📋';
+    copyButton.addEventListener('click', copyCardContent);
 
     buttonsListElement.appendChild(downloadButton);
     buttonsListElement.appendChild(copyButton);
@@ -189,3 +191,32 @@ document.getElementById('application-form').addEventListener('submit', e => {
         output.appendChild(categoryElement);
     });
 });
+
+function copyCardContent(event) {
+    const card = event.currentTarget.closest('.card');
+    const content = card.querySelector('.editable-content').innerText.trim();
+
+    navigator.clipboard.writeText(content)
+        .then(() => showToast('toastCopy'))
+        .catch(error => console.error('Error copying:', error));
+}
+
+function saveContentToFile(content, fileName) {
+    const blob = new Blob([content], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = fileName;
+    link.style.display = 'none';
+    document.body.appendChild(link);
+    link.click();
+    URL.revokeObjectURL(url);
+    link.remove();
+    showToast('toastSave');
+}
+
+function saveCardContent(event) {
+    const cardContent = event.currentTarget.closest('.card').querySelector('.editable-content');
+    const cardTitle = event.currentTarget.closest('.card').querySelector('.card-title').innerText.trim();
+    saveContentToFile(cardContent.innerText.trim(), `${cardTitle}.txt`);
+}
