@@ -21,6 +21,7 @@ const positionSelects = [
         document.querySelector('#position-field > select')
     ,   document.querySelector('#position-new-field > select')
     ,   document.querySelector('#position-object-field > select')];
+const departmentSelect = document.querySelector('#department-field > select');
 const statementTypeSelect = document.querySelector('#statement-type');
 const output = document.querySelector('#generated-statement');
 
@@ -63,6 +64,12 @@ positionSelects.forEach(select => {
         select.appendChild(departmentGroup);
     });
 })
+
+// Init list of departments
+profile.departments.forEach((department, i) => {
+    const departmentOption = Section(null, { id: i, name: department }); 
+    departmentSelect.appendChild(departmentOption);
+});
 
 // TODO: Rewrite it in human language...
 let currentFields = [];
