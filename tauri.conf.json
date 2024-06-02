@@ -3,7 +3,7 @@
     "beforeBuildCommand": "yarn build",
     "beforeDevCommand": "yarn dev",
     "devPath": "http://localhost:1984/",
-    "distDir": "./target/view"
+    "distDir": "./target/app"
   },
   "tauri": {
     "allowlist": {
@@ -12,6 +12,13 @@
       },
       "clipboard": {
         "writeText": true
+      },
+      "path": {
+        "all": true
+      },
+      "fs": {
+        "readFile": true,
+        "scope": ["$RESOURCE/**"]
       }
     },
     "bundle": {
@@ -30,7 +37,9 @@
           "type": "downloadBootstrapper"
         }
       },
-      "resources": []
+      "resources": [
+        "assets/profiles/*.json"
+      ]
     },
     "security": {
       "csp": null

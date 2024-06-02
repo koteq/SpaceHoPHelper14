@@ -14,7 +14,7 @@ path = "src/main.rs"
 [dependencies]
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
-tauri = { version = "1.5.1", features = [ "updater", "clipboard-write-text", "shell-open"] }
+tauri = { version = "1.5.1", features = [ "fs-read-file", "path-all", "updater", "clipboard-write-text", "shell-open"] }
 
 [build-dependencies]
 tauri-build = { version = "1.5.0", features = [] }
