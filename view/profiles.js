@@ -22,6 +22,7 @@ const positionSelects = [
     ,   document.querySelector('#position-new-field > select')
     ,   document.querySelector('#position-object-field > select')];
 const departmentSelect = document.querySelector('#department-field > select');
+const departmentCodeSelect = document.querySelector('#department-code-field > select');
 const statementTypeSelect = document.querySelector('#statement-type');
 const output = document.querySelector('#generated-statement');
 
@@ -67,8 +68,14 @@ positionSelects.forEach(select => {
 
 // Init list of departments
 profile.departments.forEach((department, i) => {
-    const departmentOption = Section(null, { id: i, name: department }); 
+    const departmentOption = Section(null, { id: i+1, name: department }); 
     departmentSelect.appendChild(departmentOption);
+});
+
+// Init list of department codes
+profile.departmentsCodes.forEach((code, i) => {
+    const codeOption = Section(null, { id: i+1, name: code }); 
+    departmentCodeSelect.appendChild(codeOption);
 });
 
 // TODO: Rewrite it in human language...
@@ -191,6 +198,7 @@ document.getElementById('application-form').addEventListener('submit', e => {
     section.categories.forEach(category => {
         const categoryElement = Category(category.name);
 
+        console.log(category.subcategories);
         category.subcategories.forEach(sub => {
             const subcategoryElement = Subcategory(sub.name);
 
