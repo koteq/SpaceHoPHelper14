@@ -151,6 +151,7 @@ const CategoryPrototype = (name, level) => {
     const element = document.createElement('div');
     if (name !== "default") {
         const titleElement = document.createElement('h' + level);
+        titleElement.classList.add(`mt-${level == 3 ? 5 : 2}`, `mb-${level == 3 ? 3 : 2}`);
         titleElement.textContent = name;
         element.appendChild(titleElement);
     }
