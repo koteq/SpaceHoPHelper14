@@ -1,6 +1,12 @@
 import Cleave from 'cleave.js';
 import { showToast } from './utils';
 
+if (import.meta.env.VITE_WEB) {
+  document.querySelectorAll('.only-app').forEach(element => {
+    element.remove();
+  });
+}
+
 const timeInput = document.getElementById("time-input");
 const timerOutput = document.getElementById("timer-output");
 const startButton = document.getElementById("start-timer");
