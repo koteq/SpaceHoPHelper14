@@ -164,7 +164,7 @@
     </div>
 
     <!-- Контент, поля, кнопки -->
-    <div class="container mt-2 mb-2">
+    <div class="container mt-2 mb-2" style="flex-grow: 1;">
         <div class="tab-content">
             <div class="tab-pane fade show active" id="tab1">
 
@@ -539,6 +539,16 @@
 <script type="module" src="scripts/script.js"></script>
 <script type="module" src="scripts/updates.js"></script>
 <script type="module" src="scripts/profiles.js"></script>
+
+<script type="module">
+    if (!import.meta.env.PROD) {
+        const status = document.createElement('div');
+        status.classList.add('dev-mode');
+        status.textContent = `DEV MODE. TARGET: ${import.meta.env.VITE_WEB ? 'WEB' : 'CLIENT'}`;
+        document.body.appendChild(status);
+    }
+</script>
+
 </body>
 
 </html>
