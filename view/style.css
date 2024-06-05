@@ -268,3 +268,13 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.dropdown {
+    &:focus-within > .btn > svg {
+        transform: rotate(90deg);
+    }
+
+    & > .btn > svg {
+        transition: 0.5s;
+    }
+}
