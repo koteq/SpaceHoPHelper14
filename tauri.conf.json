@@ -18,6 +18,7 @@
       },
       "fs": {
         "readFile": true,
+        "readDir": true,
         "scope": ["$RESOURCE/**"]
       }
     },

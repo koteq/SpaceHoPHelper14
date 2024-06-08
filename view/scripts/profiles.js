@@ -1,5 +1,6 @@
 import { resolveResource } from '@tauri-apps/api/path'
 import { readTextFile } from '@tauri-apps/api/fs'
+import { $settings } from './state';
 
 let profilePath;
 let profile;
@@ -258,3 +259,5 @@ function saveCardContent(event) {
     const cardTitle = event.currentTarget.closest('.card').querySelector('.card-title').innerText.trim();
     saveContentToFile(cardContent.innerText.trim(), `${cardTitle}.txt`);
 }
+
+console.log($settings.profiles);
