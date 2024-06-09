@@ -106,14 +106,12 @@ document.getElementById('application-form').addEventListener('submit', e => {
 
     const data = new FormData(e.target);
     const dataObject = selectFields(data);
-    console.log(dataObject);
 
     const section = sectionsById.get(parseInt(statementTypeSelect.value));
 
     section.categories.forEach(category => {
         const categoryElement = Category(category.name);
 
-        console.log(category.subcategories);
         category.subcategories.forEach(sub => {
             const subcategoryElement = Subcategory(sub.name);
 
@@ -124,7 +122,6 @@ document.getElementById('application-form').addEventListener('submit', e => {
                 templates.forEach(templateData => {
                     const { title, template } = templateData;
                     const cardTemplate = template.replace(/\$\{{2}([\w]+)\}{2}/g, (_, key) => dataObject[key]);
-                    console.log(cardTemplate);
                     const card = Card(title, cardTemplate);
 
                     if (row) {
@@ -143,5 +140,3 @@ document.getElementById('application-form').addEventListener('submit', e => {
         output.appendChild(categoryElement);
     });
 });
-
-console.log($settings.profiles);
