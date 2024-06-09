@@ -8,7 +8,7 @@
   "tauri": {
     "allowlist": {
       "shell": {
-        "open": true
+        "open": "^((https?://\\w+)|(\\\\?\\\\{2})).+"
       },
       "clipboard": {
         "writeText": true

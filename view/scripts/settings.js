@@ -1,6 +1,8 @@
 import { invoke } from '@tauri-apps/api';
 import { $settings } from './state';
 import { setProfile } from './profiles';
+import { resolveResource } from '@tauri-apps/api/path';
+import { open } from '@tauri-apps/api/shell';
 
 const profileSelect = document.querySelector('#profiles-select');
 
@@ -33,4 +35,9 @@ profileSelect.addEventListener('change', async () => {
     $settings.profile = profileSelect.value;
     console.log("Current profile: " + $settings.profile);
     await setProfile($settings.profile);
+});
+
+document.querySelector('#open-profiles').addEventListener('click', async () => {
+    console.log(await resolveResource('assets/profiles'));
+    await open(await resolveResource('assets/profiles'));
 });
