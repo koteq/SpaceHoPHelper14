@@ -37,7 +37,8 @@ profileSelect.addEventListener('change', async () => {
     await setProfile($settings.profile);
 });
 
-document.querySelector('#open-profiles').addEventListener('click', async () => {
-    console.log(await resolveResource('assets/profiles'));
-    await open(await resolveResource('assets/profiles'));
-});
+if (!import.meta.env.VITE_WEB) {
+    document.querySelector('#open-profiles').addEventListener('click', async () => {
+        await open(await resolveResource('assets/profiles'));
+    });
+}

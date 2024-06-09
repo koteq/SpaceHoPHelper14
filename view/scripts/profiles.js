@@ -7,7 +7,7 @@ export async function setProfile(profileName) {
     let profilePath;
     let profile;
     if (import.meta.env.VITE_WEB) {
-        profilePath = $settings.profiles[profileName];
+        profilePath = 'profiles/' + $settings.profiles[profileName];
         profile = JSON.parse(await(await fetch(profilePath)).text());
     } else {
         profilePath = $settings.profiles[profileName];

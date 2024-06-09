@@ -11,7 +11,7 @@ permissions:
 jobs:
     pre-release:
         env:
-          VITE_REPOSITORY_URL: ${{ github.repositoryUrl }}
+          VITE_REPOSITORY_URL: "https://github.com/${{ github.repository }}"
         runs-on: windows-latest
         steps:
             - uses: actions/checkout@v4
@@ -55,6 +55,7 @@ jobs:
 
             - name: Build executable
               env:
+                VITE_APP_VERSION: "${{ steps.get-version.outputs.version }}"
                 TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
                 TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
               run: cargo tauri build
