@@ -11,6 +11,8 @@ permissions:
 jobs:
     release:
         runs-on: windows-latest
+        env:
+          VITE_REPOSITORY_URL: ${{ github.repositoryUrl }}
         steps:
             - uses: actions/checkout@v4
               name: Checkout repository
@@ -53,14 +55,16 @@ jobs:
 
             - name: Build executable
               env:
+                VITE_APP_VERSION: "${{ steps.get-version.outputs.version }}"
                 TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
                 TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
               run: cargo tauri build
 
             - name: Build web version
+              working-directory: ./view
               env:
                 VITE_WEB: "$true"
-              working-directory: ./view
+                VITE_APP_VERSION: "${{ steps.get-version.outputs.version }}"
               run: yarn build
 
             - name: Artifact preparation

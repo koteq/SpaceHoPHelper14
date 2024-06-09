@@ -3,7 +3,7 @@ import { relaunch } from "@tauri-apps/api/process";
 import { checkUpdate, installUpdate, onUpdaterEvent } from "@tauri-apps/api/updater";
 import { Modal } from 'bootstrap';
 
-if (!import.meta.env.VITE_WEB) {
+if (!import.meta.env.VITE_WEB && import.meta.env.PROD) {
     invoke('get_repository').then(res => {
         document.querySelectorAll('.repo-link').forEach(link => {
             link.setAttribute('href', res); 
