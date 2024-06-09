@@ -10,6 +10,8 @@ permissions:
 
 jobs:
     pre-release:
+        env:
+          VITE_REPOSITORY_URL: ${{ github.repositoryUrl }}
         runs-on: windows-latest
         steps:
             - uses: actions/checkout@v4
@@ -60,6 +62,7 @@ jobs:
             - name: Build web version
               env:
                 VITE_WEB: "$true"
+                VITE_APP_VERSION: "${{ steps.get-version.outputs.version }}"
               working-directory: ./view
               run: yarn build
 
