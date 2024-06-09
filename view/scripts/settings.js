@@ -1,5 +1,6 @@
 import { invoke } from '@tauri-apps/api';
 import { $settings } from './state';
+import { setProfile } from './profiles';
 
 const profileSelect = document.querySelector('#profiles-select');
 
@@ -24,9 +25,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     $settings.profiles = profiles
 
     console.log("Current profile: " + $settings.profile);
+
+    await setProfile($settings.profile);
 });
 
 profileSelect.addEventListener('change', async () => {
     $settings.profile = profileSelect.value;
     console.log("Current profile: " + $settings.profile);
+    await setProfile($settings.profile);
 });
