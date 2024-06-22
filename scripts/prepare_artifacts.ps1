@@ -1,7 +1,12 @@
-Write-Host "Checking dependencies"
+Write-Host "Checking dependencies..."
 if (-not (Get-Module -ListAvailable -Name PSToml)) {
     Write-Host "Installing the 'PSToml' module"
     Install-Module -Name PSToml -Scope CurrentUser -Force
+} elseif (-not (Get-Module -ListAvailable -Name powershell-yaml)) {
+    Write-Host "Installing the 'powershell-yaml' module"
+    Install-Module -Name powershell-yaml -Scope CurrentUser -Force
+} else {
+    Write-Host "All dependencies are installed.`n"
 }
 
 Write-Host "Parsing the " -NoNewLine 
@@ -18,7 +23,6 @@ $targetPath = "target"
 $bundleDir = "target/release/bundle/$targetType/"
 $bundlePath = "$bundleDir$baseName.$targetType.zip"
 $sign = Get-Content "$bundlePath.sig"
-$userName = $manifest.package.repository.Split("/")[3].ToLower()
 
 $color = "Green"
 
@@ -47,7 +51,7 @@ $latest = [PSCustomObject]@{
     platforms = [PSCustomObject]@{
         "windows-x86_64" = [PSCustomObject]@{
             signature = "$sign"
-            url = "https://$userName.github.io/$appName/bundles/$baseName.$targetType.zip"
+            url = "$env:BUNDLES_URL/$baseName.$targetType.zip"
         }
     }
 }
@@ -79,18 +83,18 @@ New-Item -Path "$outPath/profiles" -ItemType Directory -Force | Out-Null
 Write-Host "Reading a list of profiles:"
 
 $profiles = @()
-Get-ChildItem -Path "assets/profiles" | ForEach-Object {
+Get-ChildItem -Path "assets/profiles" | Where-Object Name -Like "*.yaml" | ForEach-Object {
     Write-Host "`t + $($_.Name)" -ForegroundColor $color
-    $profileObj = Get-Content -Path "assets/profiles/$($_.Name)" | ConvertFrom-Json
+    $profileObj = Get-Content -Path "assets/profiles/$($_.Name)" -Raw -Encoding UTF8 | ConvertFrom-Yaml
+    $outputFilename = "$($_.BaseName).json"
     $profiles += [PSCustomObject]@{
-        "$($profileObj.profile)" = "$($_.Name)"
+        "$($profileObj.profile)" = $outputFilename
     }
-    Copy-Item -Path "assets/profiles/$($_.Name)" -Destination "$outPath/profiles" -Force
+    New-Item -Path "$outPath/profiles/$outputFilename" -Force -Value (ConvertTo-Json -Depth 100  $profileObj) | Out-Null
 }
 Write-Host "Writing " -NoNewline
 Write-Host "'$outPath/profiles/meta.json'" -ForegroundColor $color
 $profiles | ConvertTo-Json -Compress | Out-File -FilePath "$outPath/profiles/meta.json"
-$profiles | ConvertTo-Json | Write-Host
 
 # Bundles
 
