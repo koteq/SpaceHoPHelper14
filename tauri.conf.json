@@ -39,7 +39,7 @@
         }
       },
       "resources": [
-        "assets/profiles/*.json"
+        "assets/profiles/*.yaml"
       ]
     },
     "security": {
