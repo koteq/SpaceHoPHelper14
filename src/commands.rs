@@ -1,4 +1,5 @@
 pub mod profiles { 
+    use crate::profile::Profile;
     use std::{collections::HashMap, path::Path};
     use tauri::command;
 
@@ -14,7 +15,7 @@ pub mod profiles {
             if entry.file_type().await.unwrap().is_dir() { continue; }
 
             let path = entry.path().into_os_string().into_string().unwrap();
-            let name = get_profile_name(path.as_ref()).await;
+            let name = if let Some(name) = get_profile_name(&entry.path()).await { name } else { continue; };
 
             println!("Found profile: {}, path: {}", name, path);
 
@@ -24,10 +25,22 @@ pub mod profiles {
         profiles
     }
 
-    async fn get_profile_name(path: &Path) -> String {
-        let content = tokio::fs::read_to_string(path).await.unwrap();
-        let profile: serde_json::Value = serde_json::from_str(&content).unwrap();
+    #[command]
+    pub async fn get_profile(app: tauri::AppHandle, path: String) -> Option<Profile> {
+        let path = app.path_resolver().resolve_resource(PROFILES_FOLDER.to_owned()).unwrap().join(path);
+        
+        println!("Loading profile: {}", path.display());
 
-        profile["profile"].to_string()
+        let content = tokio::fs::read_to_string(path).await.ok()?;
+        let profile: Profile = serde_yaml::from_str(&content).ok()?;
+
+        Some(profile)
+    }
+
+    async fn get_profile_name(path: &Path) -> Option<String> {
+        let content = tokio::fs::read_to_string(path).await.ok()?;
+        let profile: serde_yaml::Value = serde_yaml::from_str(&content).ok()?;
+
+        Some(profile["profile"].as_str()?.to_owned())
     }
 }

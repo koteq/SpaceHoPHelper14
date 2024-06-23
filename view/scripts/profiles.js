@@ -1,4 +1,4 @@
-import { readTextFile } from '@tauri-apps/api/fs'
+import { invoke } from '@tauri-apps/api'
 import { $settings } from './state';
 import { Card, Category, Group, Row, RowItem, Section, Subcategory } from './elements';
 import { removeOptions } from './utils';
@@ -11,10 +11,19 @@ export async function setProfile(profileName) {
         profile = JSON.parse(await(await fetch(profilePath)).text());
     } else {
         profilePath = $settings.profiles[profileName];
-        profile = JSON.parse(await readTextFile(profilePath))
+        profile = await invoke('get_profile', { path: profilePath });
     }
 
+    console.log(profile);
+
     // Mapping sections
+    let id = 1;
+    profile.groups.forEach(group => {
+        group.sections.forEach(section => {
+            section.id = id;
+            id++;
+        })
+    })
     const sectionsById = new Map(profile.groups.flatMap(group => group.sections.map(section => [section.id, section])));
 
     // Selectors
@@ -105,6 +114,8 @@ export async function setProfile(profileName) {
             obj['date'] = new Date(new Date().setFullYear(new Date().getFullYear() + 1000)).toLocaleDateString();
             obj['stationNumber'] = document.querySelector('#station-number').value;
             obj['time'] = document.querySelector('#timer-output').value || '00:00:00';
+            obj['spaces'] = " ".repeat(Math.max((31 - obj['stationNumber'].length) / 2, 0));
+            console.log(obj);
             return obj;
         };
     
