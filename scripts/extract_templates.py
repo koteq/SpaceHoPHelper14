@@ -32,7 +32,7 @@ matches = pattern.findall(html)
 
 def get_text(element):
     text = '\n'.join(map(lambda x: x.strip(), element.select_one('.card-text').get_text().split('\n'))).strip()
-    return text
+    return re.sub(r"\s?.*подпись.*", "", text, 0, re.MULTILINE | re.IGNORECASE)
 def extract_data_from_html(html, name):
     soup = BeautifulSoup(html, 'html.parser')
     get_category = lambda: section['categories'][[index for (index, item) in enumerate(section['categories']) if item['name'] == category][0]]
