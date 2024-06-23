@@ -2,12 +2,12 @@ Write-Host "Checking dependencies..."
 if (-not (Get-Module -ListAvailable -Name PSToml)) {
     Write-Host "Installing the 'PSToml' module"
     Install-Module -Name PSToml -Scope CurrentUser -Force
-} elseif (-not (Get-Module -ListAvailable -Name powershell-yaml)) {
+} 
+if (-not (Get-Module -ListAvailable -Name powershell-yaml)) {
     Write-Host "Installing the 'powershell-yaml' module"
     Install-Module -Name powershell-yaml -Scope CurrentUser -Force
-} else {
-    Write-Host "All dependencies are installed.`n"
 }
+Write-Host "All dependencies are installed.`n"
 
 Write-Host "Parsing the " -NoNewLine 
 Write-Host "Cargo.toml" -ForegroundColor Green -NoNewline
