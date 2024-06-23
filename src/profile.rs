@@ -6,7 +6,7 @@ pub enum ProfileField {
     FullName,
     Position,
     PositionNew,
-    FullnameObject,
+    FullNameObject,
     PositionObject,
     Department,
     DepartmentCode,
