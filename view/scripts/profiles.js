@@ -114,6 +114,8 @@ export async function setProfile(profileName) {
             obj['date'] = new Date(new Date().setFullYear(new Date().getFullYear() + 1000)).toLocaleDateString();
             obj['stationNumber'] = document.querySelector('#station-number').value;
             obj['time'] = document.querySelector('#timer-output').value || '00:00:00';
+            obj['spaces'] = " ".repeat(Math.max((31 - obj['stationNumber'].length) / 2, 0));
+            console.log(obj);
             return obj;
         };
     
