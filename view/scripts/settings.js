@@ -44,3 +44,8 @@ document.querySelector('#open-profiles').addEventListener('click', async () => {
     console.log(await resolveResource('assets/profiles'));
     await open(await resolveResource('assets/profiles'));
 });
+
+document.querySelectorAll('.open-logs').forEach(el => el.addEventListener('click', async () => {
+    console.log(await resolveResource('assets/profiles'));
+    await open(await resolveResource('logs'));
+}));
