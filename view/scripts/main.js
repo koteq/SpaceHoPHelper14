@@ -1,5 +1,18 @@
 import Cleave from 'cleave.js';
 import { showToast } from './utils';
+import { attachConsole } from "tauri-plugin-log-api";
+import { initSettings } from './settings';
+import { checkUpdates } from './updates';
+
+console.log("Initializing...");
+
+if (!import.meta.env.VITE_WEB) {
+  const detach = await attachConsole();
+  trace("Attached console");
+}
+
+await checkUpdates();
+initSettings();
 
 if (import.meta.env.VITE_WEB) {
   document.querySelectorAll('.only-app').forEach(element => {

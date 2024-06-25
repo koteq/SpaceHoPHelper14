@@ -1,5 +1,4 @@
 import { invoke } from '@tauri-apps/api';
-import { info } from "tauri-plugin-log-api";
 import { $settings } from './state';
 import { Card, Category, Group, Row, RowItem, Section, Subcategory } from './elements';
 import { removeOptions, showErrorToast } from './utils';
@@ -8,7 +7,8 @@ export async function setProfile(profileName) {
     let profilePath;
     let profile;
     if (import.meta.env.VITE_WEB) {
-        profilePath = 'profiles/' + $settings.profiles[profileName];
+        const url = import.meta.env.PROD ? 'profiles/' : `${import.meta.env.VITE_PAGE_URL}/profiles/`;
+        profilePath = url + $settings.profiles[profileName];
         profile = JSON.parse(await(await fetch(profilePath)).text());
     } else {
         profilePath = $settings.profiles[profileName];
