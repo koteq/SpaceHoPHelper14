@@ -1,22 +1,26 @@
 import Cleave from 'cleave.js';
-import { showToast } from './utils';
-import { attachConsole } from "tauri-plugin-log-api";
+import { group, groupEnd, showToast } from './utils';
+import { attachConsole, info, trace } from "tauri-plugin-log-api";
 import { initSettings } from './settings';
 import { checkUpdates } from './updates';
 
-console.log("Initializing...");
-
 if (!import.meta.env.VITE_WEB) {
-  const detach = await attachConsole();
-  trace("Attached console");
+  const _detach = await attachConsole();
+  await trace("Attached console");
 }
 
+await group("Initializing JavaScript modules...");
+
 await checkUpdates();
-initSettings();
+await initSettings();
+
+await groupEnd("All JavaScript modules initialized");
 
 if (import.meta.env.VITE_WEB) {
-  document.querySelectorAll('.only-app').forEach(element => {
+  await trace("Removing only-app elements...");
+  await document.querySelectorAll('.only-app').forEach(async element => {
     element.remove();
+    await trace(`Removed "${element.id}" element...`);
   });
 }
 
@@ -37,6 +41,7 @@ function convertInputToSeconds(input) {
   const [, hours, minutes, seconds] = input.match(timePattern) || [];
 
   if (!hours || !minutes || !seconds) {
+    trace(`Invalid time format: ${input}. Expected 'HH:MM:SS'. Returning 0.`);
     showToast('toastFailTimer');
     return 0;
   }
@@ -48,7 +53,12 @@ function convertInputToSeconds(input) {
 
 let countdownInterval;
 function startTimer() {
-  clearInterval(countdownInterval);
+  if (countdownInterval !== undefined) {
+    trace("Stopping timer...");
+    clearInterval(countdownInterval);
+  }
+  
+  trace("Starting new timer...");
 
   const inputValue = timeInput.value ? timeInput.value : '00:00:00';
   const initialSeconds = convertInputToSeconds(inputValue);
@@ -67,6 +77,7 @@ startButton.addEventListener("click", startTimer);
 
 timeInput.addEventListener("keydown", (event) => {
   if (event.isComposing || event.key === "Enter") {
+    trace("Input time: " + timeInput.value);
     startTimer();
   }
 });
@@ -96,16 +107,20 @@ const themeToggleBtn = document.getElementById('darkModeToggleBtn');
 function toggleDarkMode() {
     const isDark = document.documentElement.classList.toggle('dark-mode');
     themeToggleBtn.textContent = `Space HoP Helper 14 ${isDark ? '🌚' : '🌞'}`;
+    info(`${isDark ? 'Dark' : 'Light'} mode enabled`);
 }
 function setTheme() {
+    trace(`Setting theme to ${document.documentElement.classList.contains('dark-mode') ? 'dark' : 'light'}`);
     toggleDarkMode();
     localStorage.setItem('theme', document.documentElement.classList.contains('dark-mode') ? 'dark' : 'light');
 }
 themeToggleBtn.addEventListener('click', setTheme);
 const savedTheme = localStorage.getItem('theme');
 if (!savedTheme) {
+    trace("No theme saved. Setting default to light mode.");
     localStorage.setItem('theme', 'light');
 } else if (savedTheme === 'dark') {
+    trace(`Saved theme: ${savedTheme}`);
     toggleDarkMode();
 }
 
@@ -118,6 +133,8 @@ function handleStationFormat(event) {
     return;
   }
 
+  trace("Input station name: " + document.getElementById('station-number').value);
+
   const inputValue = event.target.value;
   const stationPattern = /(Atlas|TestTeg|Fland|Maus|Delta|Avrite|Paper|Silly|Meta|Packed|Gate|Gelta|Cluster|Omega|Astra|Bagel|Origin|CentComm|Outpost|Ishimura|NukieOutpost|Box|Europa|Spectrum|Saltern|Core|Marathon|MeteorArena|Atlas|Reach|Train|Oasis|Pillar|Aspid|Barratry|Gemini|Lighthouse|Moose|Split)/i;
   const stationMatch = inputValue.match(stationPattern);
@@ -128,4 +145,6 @@ function handleStationFormat(event) {
   const stationNumber = stationNumberMatch ? stationNumberMatch[0].toUpperCase() : ' XX-000';
 
   event.target.value = stationName + stationNumber;
+  
+  trace("Formatted station name: " + event.target.value);
 }
