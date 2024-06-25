@@ -3,6 +3,7 @@ import { $settings } from './state';
 import { setProfile } from './profiles';
 import { resolveResource } from '@tauri-apps/api/path';
 import { open } from '@tauri-apps/api/shell';
+import { attachConsole, trace } from "tauri-plugin-log-api";
 
 const profileSelect = document.querySelector('#profiles-select');
 
@@ -15,6 +16,8 @@ const getProfilesList = async () => {
 // TODO: Save and load settings from config
 
 document.addEventListener('DOMContentLoaded', async () => {
+    const detach = await attachConsole();
+    trace("Attached console");
     const profiles = await getProfilesList();
     for (const profile of Object.keys(profiles)) {
         const option = document.createElement('option');
@@ -39,6 +42,10 @@ profileSelect.addEventListener('change', async () => {
 
 if (!import.meta.env.VITE_WEB) {
     document.querySelector('#open-profiles').addEventListener('click', async () => {
-        await open(await resolveResource('assets/profiles'));
+        await open(await resolveResource('assets/profiles'));    
     });
+    document.querySelectorAll('.open-logs').forEach(el => el.addEventListener('click', async () => {
+        console.log(await resolveResource('assets/profiles'));
+        await open(await resolveResource('logs'));
+    }));
 }
