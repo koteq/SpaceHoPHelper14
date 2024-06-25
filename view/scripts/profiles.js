@@ -1,7 +1,8 @@
-import { invoke } from '@tauri-apps/api'
+import { invoke } from '@tauri-apps/api';
+import { info } from "tauri-plugin-log-api";
 import { $settings } from './state';
 import { Card, Category, Group, Row, RowItem, Section, Subcategory } from './elements';
-import { removeOptions } from './utils';
+import { removeOptions, showErrorToast } from './utils';
 
 export async function setProfile(profileName) {
     let profilePath;
@@ -11,7 +12,12 @@ export async function setProfile(profileName) {
         profile = JSON.parse(await(await fetch(profilePath)).text());
     } else {
         profilePath = $settings.profiles[profileName];
-        profile = await invoke('get_profile', { path: profilePath });
+        try {
+            profile = await invoke('get_profile', { path: profilePath });
+        } catch (e) {
+            showErrorToast(`(${profileName}) <span class="fw-bold">${Object.keys(e)[0]}</span>: ${e[Object.keys(e)[0]]}`);
+            return;
+        }
     }
 
     console.log(profile);
