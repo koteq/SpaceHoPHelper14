@@ -14,25 +14,22 @@ const getProfilesList = async () => {
 }
 
 // TODO: Save and load settings from config
+const detach = await attachConsole();
+trace("Attached console");
+const profiles = await getProfilesList();
+for (const profile of Object.keys(profiles)) {
+    const option = document.createElement('option');
+    option.value = profile;
+    option.textContent = profile;
+    profileSelect.appendChild(option);
+}
 
-document.addEventListener('DOMContentLoaded', async () => {
-    const detach = await attachConsole();
-    trace("Attached console");
-    const profiles = await getProfilesList();
-    for (const profile of Object.keys(profiles)) {
-        const option = document.createElement('option');
-        option.value = profile;
-        option.textContent = profile;
-        profileSelect.appendChild(option);
-    }
+$settings.profile = profileSelect.value;
+$settings.profiles = profiles
 
-    $settings.profile = profileSelect.value;
-    $settings.profiles = profiles
-
-    console.log("Current profile: " + $settings.profile);
+console.log("Current profile: " + $settings.profile);
 
     await setProfile($settings.profile);
-});
 
 profileSelect.addEventListener('change', async () => {
     $settings.profile = profileSelect.value;
