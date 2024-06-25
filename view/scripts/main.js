@@ -1,12 +1,12 @@
 import Cleave from 'cleave.js';
-import { group, groupEnd, showToast } from './utils';
-import { attachConsole, info, trace } from "tauri-plugin-log-api";
+import { group, groupEnd, info, trace, showToast } from './utils';
+import { attachConsole, trace as t } from "tauri-plugin-log-api";
 import { initSettings } from './settings';
 import { checkUpdates } from './updates';
 
 if (!import.meta.env.VITE_WEB) {
   const _detach = await attachConsole();
-  await trace("Attached console");
+  await t("Attached console");
 }
 
 await group("Initializing JavaScript modules...");
