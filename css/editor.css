@@ -1,0 +1,29 @@
+@import url("noto.css");
+
+body {
+    color: rgb(25, 25, 25);
+    background: rgb(234, 237, 222);
+    line-height: 137%;
+    font-size: 12pt;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: none;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding: 5px;
+}
+
+/* See https://github.com/space-wizards/RobustToolbox/blob/cd0a35f542429bdea0f1b555bc52299502fb5605/Robust.Client/UserInterface/RichText/HeadingTag.cs#L24 */
+font[size="1"] {
+    font-weight: bold;
+    font-size: round(up, calc(12pt * 2 / sqrt(1)), 1pt);
+}
+
+font[size="2"] {
+    font-weight: bold;
+    font-size: round(up, calc(12pt * 2 / sqrt(2)), 1pt);
+}
+
+font[size="3"] {
+    font-weight: bold;
+    font-size: round(up, calc(12pt * 2 / sqrt(3)), 1pt);
+}

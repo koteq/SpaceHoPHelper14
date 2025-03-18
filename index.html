@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space HoP Helper 14</title>
     <!-- Подключаем Bootstrap-->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/sceditor@3.2.0/minified/themes/default.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="main-font">
@@ -95,10 +96,8 @@
                                 <select name="profiles" id="profiles-select" class="form-select">
                                 </select>
                             </div>
-                            <button type="button" class="dropdown-item mt-2 only-app" id="open-profiles">Расположение профилей</button>
                             <div class="dropdown-divider"></div>
-                            <a type="button" class="dropdown-item mt-2" href="%VITE_REPOSITORY_URL%" target="_blank">Репозиторий</a>
-                            <p class="mb-0 fw-normal px-3">Версия %VITE_APP_VERSION%</p>
+                            <a type="button" class="dropdown-item mt-2" href="https://github.com/koteq/SpaceHoPHelper14" target="_blank">Репозиторий</a>
                         </div>
                     </div>
                 </div>
@@ -548,34 +547,7 @@
         </div>
       </div>
 
-<!-- Модальное окно добавления имен в список datalistOptionsFullName -->
-<div class="modal fade" id="updateModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5 px-2" id="exampleModalLabel">Доступна новая версия</h1>
-            </div>
-            <div class="modal-body">
-                <p class="second-font">В репозитории была найдена новая версия программы {newVersion}. Полные изменения от версии можете посмотреть в <a href="%VITE_REPOSITORY_URL%" target="_blank">репозитории</a>.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Позже</button>
-                <button id="update-button" type="button" class="btn btn-primary">Обновить</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script type="module" src="scripts/main.js"></script>
-
-<script type="module">
-    if (!import.meta.env.PROD) {
-        const status = document.createElement('div');
-        status.classList.add('dev-mode');
-        status.textContent = `DEV MODE. TARGET: ${import.meta.env.VITE_WEB ? 'WEB' : 'CLIENT'}`;
-        document.body.appendChild(status);
-    }
-</script>
+<script type="module" src="js/main.js"></script>
 
 </body>
 
