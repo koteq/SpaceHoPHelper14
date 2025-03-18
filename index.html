@@ -111,18 +111,17 @@
             <div class="col-sm-4 mb-3">
                 <label for="station-number" class="form-label fw-bold">Станция</label>
                 <input type="text" class="form-control" id="station-number" placeholder="Station XX-000"
-                    value="Station XX-000"
+                    value=""
                     title="Укажите наименование станции и её код. Нажмите Enter, чтобы привести к нужному формату"
-                    name="station-number" required>
+                    name="station-number">
             </div>
             <div class="col-sm-4 mb-3">
                 <label for="your-name" class="form-label fw-bold">Ваше
                     имя</label>
                 <div class="d-flex">
                     <input type="search" class="form-control" list="datalistOptionsFullName" id="your-name"
-                        name="your-name" placeholder="Ваше имя"
-                        title="Имя вашего персонажа. Используется для нескольких быстрых заявлений" value="<ВАШЕ ИМЯ>"
-                        required>
+                        name="your-name" placeholder="<ВАШЕ ИМЯ>"
+                        title="Имя вашего персонажа. Используется для нескольких быстрых заявлений" value="">
                     <button type="button" id="add_names" class="btn btn-primary ms-2" data-bs-toggle="modal"
                         data-bs-target="#addNamesModal"
                         title="Добавить несколько имен в список быстрого доступа">📇</button>
@@ -202,25 +201,22 @@
                                 <label for="full-name" class="form-label fw-bold"
                                     style="margin-bottom: -0.1em;">Полное имя</label>
                                 <input type="search" class="form-control" list="datalistOptionsFullName"
-                                    name="full-name" placeholder="Полное имя" value="<ФИО>" required>
+                                    id="full-name" name="full-name" placeholder="<ФИО>" value="">
                                 <datalist id="datalistOptionsFullName">
-                                    <option value="Сабина Сирота"></option>
-                                    <option value="<ФИО>"></option>
-                                    <option value="<ФИО ОБЪЕКТА>"></option>
                                 </datalist>
                             </div>
                             <!-- Поле: Должность -->
                             <div class="col col-md mt-2 d-none" id="position-field">
                                 <label for="position" class="form-label fw-bold"
                                     style="margin-bottom: -0.1em;">Должность</label>
-                                <select class="form-select" name="position"></select>
+                                <select class="form-select" id="position" name="position"></select>
                             </div>
 
                             <!-- Поле: Выдаваемая должность -->
                             <div class="col col-md mt-2 d-none" id="position-new-field">
                                 <label for="position-new" class="form-label fw-bold"
                                     style="margin-bottom: -0.1em;">Выдаваемая должность</label>
-                                <select class="form-select" name="position-new"></select>
+                                <select class="form-select" id="position-new" name="position-new"></select>
                             </div>
 
                             <!-- Поле: Полное имя объекта заявления -->
@@ -228,36 +224,36 @@
                                 <label for="full-name-object" class="form-label fw-bold"
                                     style="margin-bottom: -0.1em;">Полное имя объекта заявления</label>
                                 <input type="search" class="form-control"
-                                    list="datalistOptionsFullName" name="full-name-object"
-                                    placeholder="Полное имя объекта" value="<ФИО ОБЪЕКТА>" required>
+                                    list="datalistOptionsFullName" id="full-name-object" name="full-name-object"
+                                    placeholder="<ФИО ОБЪЕКТА>" value="">
                             </div>
 
                             <!-- Поле: Должность объекта заявления -->
                             <div class="col col-md mt-2 d-none" id="position-object-field">
                                 <label for="position-object" class="form-label fw-bold"
                                     style="margin-bottom: -0.1em;">Должность объекта заявления</label>
-                                <select class="form-select" name="position-object"></select>
+                                <select class="form-select" id="position-object" name="position-object"></select>
                             </div>
 
                             <!-- Поле: отдел -->
                             <div class="col col-md mt-2 d-none" id="department-field">
                                 <label for="department" class="form-label fw-bold"
                                     style="margin-bottom: -0.1em;">Отдел</label>
-                                <select class="form-select" name="department"></select>
+                                <select class="form-select" id="department" name="department"></select>
                             </div>
 
                             <!-- Поле: код отдела -->
                             <div class="col col-md mt-2 d-none" id="department-code-field">
                                 <label for="department-code" class="form-label fw-bold">Код отдела</label>
-                                <select class="form-select" name="department-code">                                </select>
+                                <select class="form-select" id="department-code" name="department-code">                                </select>
                             </div>
 
                             <!-- Поле: Цель станции -->
                             <div class="col col-md mt-2 mb-2 d-none" id="station-goal-field">
                                 <label for="station-goal" class="form-label fw-bold"
                                     style="margin-bottom: -0.1em;">Цель станции</label>
-                                <input type="text" class="form-control" name="full-name"
-                                    placeholder="Цель станции" value="<ЦЕЛЬ СТАНЦИИ>" required>
+                                <input type="text" class="form-control" id="station-goal" name="station-goal"
+                                    placeholder="<ЦЕЛЬ СТАНЦИИ>" value="">
                             </div>
                             <!-- Кнопка Создания заявления -->
                             <button type="submit" class="btn btn-primary mt-3">Создать заявление</button>

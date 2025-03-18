@@ -150,20 +150,28 @@ export async function setProfile(profileName) {
       }
 
       const camelize = (s) => s.replace(/-./g, (x) => x[1].toUpperCase());
-      const selectFields = (d) => {
+      const selectFields = (formElement) => {
+        const formData = new FormData(formElement);
         trace('Collecting fields data...');
         const obj = {};
-        currentFields.forEach((k) => {
-          const s = document.querySelector(`#${k}-field > select`);
+        currentFields.forEach((fieldName) => {
+          const selectElement = document.querySelector(
+            `#${fieldName}-field > select`
+          );
           const val =
-            s !== null ? s.options[d.get(k) - 1].textContent : d.get(k);
-          obj[camelize(k)] = val;
-          trace(`Field ${camelize(k)}: ${val}`);
+            selectElement !== null
+              ? selectElement.options[formData.get(fieldName) - 1].textContent
+              : formData.get(fieldName) ||
+                formElement.querySelector(`[name="${fieldName}"]`).placeholder;
+          obj[camelize(fieldName)] = val;
+          trace(`Field ${camelize(fieldName)}: ${val}`);
         });
         obj['date'] = new Date(
           new Date().setFullYear(new Date().getFullYear() + 1000)
         ).toLocaleDateString('ru-RU');
-        obj['stationNumber'] = document.querySelector('#station-number').value;
+        obj['stationNumber'] =
+          document.querySelector('#station-number').value ||
+          document.querySelector('#station-number').placeholder;
         obj['time'] =
           document.querySelector('#timer-output').value || '00:00:00';
         obj['spaces'] = ' '.repeat(
@@ -179,8 +187,7 @@ export async function setProfile(profileName) {
         return obj;
       };
 
-      const data = new FormData(e.target);
-      const dataObject = selectFields(data);
+      const dataObject = selectFields(e.target);
 
       const section = sectionsById.get(parseInt(statementTypeSelect.value));
 

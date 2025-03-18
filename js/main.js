@@ -68,6 +68,35 @@ timeInput.addEventListener('keydown', (event) => {
   }
 });
 
+// Добавить список имен
+function addUniqueValuesToList() {
+  // Получаем элементы
+  const inputAddNames = document.getElementById('addNamesTextArea');
+  const datalist = document.getElementById('datalistOptionsFullName');
+  const excludedValuesAddNames = ["Инженерный отдел", "Медицинский отдел", "Отдел снабжения", "Сервисный отдел", "Научный отдел", "Служба безопасности", "Юридический департамент", "Командование"];
+
+  // Получаем текущий список значений из datalist
+  const datalistOptions = Array.from(datalist.getElementsByTagName('option'));
+  const values = Array.from(datalistOptions).map(option => option.value);
+
+  // Получаем новое значение из текстового поля
+  const newValues = inputAddNames.value.trim().split('\n').map(value => value.trim());
+
+  // Проверяем, существует ли уже такое значение
+  newValues.forEach(newValue => {
+    if (!excludedValuesAddNames.includes(newValue) && values.indexOf(newValue) === -1 && newValue !== "") {
+      // Создаем новый элемент option и добавляем его в datalist
+      const option = document.createElement('option');
+      option.value = newValue;
+      datalist.appendChild(option);
+      values.push(newValue); // Добавляем значение в массив для проверки уникальности
+      inputAddNames.value = ""; // Очищаем форму
+      showToast('toastAddNames'); // toast
+    }
+  });
+}
+document.getElementById('add-names-button').addEventListener("click", addUniqueValuesToList);
+
 // Scroll to top button functionality
 const scrollToTopButton = document.getElementById('myBtnUP');
 
