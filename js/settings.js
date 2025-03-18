@@ -8,7 +8,15 @@ export async function initSettings() {
   const profileSelect = document.querySelector('#profiles-select');
 
   const getProfilesList = async () => {
-    return { Corvax: 'corvax.yaml' };
+    const url = './profiles/profiles.txt';
+    const profiles = await (await fetch(url)).text();
+    return profiles
+      .trim()
+      .split('\n')
+      .reduce((acc, profile) => {
+        acc[profile] = `${profile}.yaml`;
+        return acc;
+      }, {});
   };
 
   // TODO: Save and load settings from config

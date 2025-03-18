@@ -1,4 +1,5 @@
 import 'https://unpkg.com/sceditor@3.2.0/minified/sceditor.min.js';
+import 'https://unpkg.com/sceditor@3.2.0/minified/plugins/undo.js';
 import 'https://unpkg.com/sceditor@3.2.0/minified/formats/bbcode.js';
 import 'https://unpkg.com/sceditor@3.2.0/minified/icons/monocons.js';
 import 'https://unpkg.com/sceditor@3.2.0/languages/ru.js';
