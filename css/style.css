@@ -75,6 +75,9 @@ label {
     background: rgb(234, 237, 222);
 }
 
+.sceditor-button-bolditalic div {
+    background: url('../img/bolditalic.svg');
+}
 
 /* DARK THEME */
 .dark-mode body {

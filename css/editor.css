@@ -2,7 +2,9 @@
 
 body {
     color: rgb(25, 25, 25);
+    /* See https://github.com/space-wizards/space-station-14/blob/cbcd1091d55d1655ac137bf57500de0e69a43ad9/Content.Client/Stylesheets/StyleNano.cs#L528C17-L528C25 */
     background: rgb(234, 237, 222);
+    mix-blend-mode: multiply;
     line-height: 137%;
     font-size: 12pt;
     font-family: "Noto Sans", sans-serif;
@@ -10,6 +12,25 @@ body {
     font-style: normal;
     font-variation-settings: "wdth" 100;
     padding: 5px;
+}
+
+/* Reuse strike tag for [bolditalic] */
+strike {
+    text-decoration-line: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Disallow style stacking to simulate SS14 */
+strong {
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Disallow style stacking to simulate SS14 */
+em {
+    font-weight: normal;
+    font-style: italic;
 }
 
 /* See https://github.com/space-wizards/RobustToolbox/blob/cd0a35f542429bdea0f1b555bc52299502fb5605/Robust.Client/UserInterface/RichText/HeadingTag.cs#L24 */
